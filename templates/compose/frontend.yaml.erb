@@ -2,7 +2,8 @@ version: '3.6'
 
 services:
   frontend:
-    image: "<%= @config['images']['frontend'] %>"
+    build:
+      context: "<%= @config['images']['frontend'] %>"
     volumes:
       - ../config/frontend/env.js:/home/node/public/env.js
     labels:

@@ -2,7 +2,7 @@ version: '3.6'
 
 x-daemon: &peatio-daemon
   build:
-    context: "<%= @config['images']['peatio'] %>"
+    context: "/home/user/rails_apps/peatio"
   restart: always
   env_file:
     - ../config/peatio.env
@@ -72,7 +72,7 @@ services:
 
   ranger:
     build:
-      context: "<%= @config['images']['peatio'] %>"
+      context: "/home/user/rails_apps/peatio"
     env_file:
       - ../config/ranger.env
     ports:
@@ -80,7 +80,7 @@ services:
     command: bash -c "bundle exec peatio service start ranger"
 
   postmaster:
-    image: "<%= @config['images']['postmaster'] %>"
+    image: "quay.io/openware/postmaster:0.0.3"
     env_file:
       - ../config/postmaster.env
 

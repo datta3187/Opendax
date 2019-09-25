@@ -1,21 +1,21 @@
 app:
   name: "Microkube"
-  domain: "app.local"
-  subdomain: "www"
+  domain: "ngrok.io"
+  subdomain: "ae6bea5a"
 ssl:
   enabled: true
   email: "support@example.com"
 images:
-  peatio: rubykube/peatio:2.0.34
-  barong: rubykube/barong:2.0.51
-  frontend: rubykube/mikroapp:0.1.5
+  peatio: /home/user/rails_apps/peatio
+  barong: /home/user/rails_apps/barong
+  frontend: /home/user/rails_apps/peatio_xchange
   tower: rubykube/tower:0.1.8
   postmaster: quay.io/openware/postmaster:0.0.3
   arke: rubykube/arke:0.1.5
 vendor:
   frontend: https://github.com/rubykube/mikroapp.git
 storage:
-  provider: "Google"
+  provider: "local"
   bucketName: "microkube-barong-docs-bucket"
   accessKey: "**********"
   secretKey: "**********"
@@ -28,10 +28,12 @@ terraform:
   machine_type: "n1-standard-4"
   image: "debian-cloud/debian-9"
 twilio:
-  phone_number: "+15005550000"
-  account_sid: "changeme"
-  auth_token: "changeme"
-sendgrid_api_key: changeme
+  phone_number: "+12055126785"
+  account_sid: "AC9ce5211062b3742247c476e531816c41"
+  auth_token: "9cd2e1ca945ce031f808065f73de9d15"
+
+sendgrid_api_key: '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'
+
 arke:
   strategy:
     type: 'copy'
