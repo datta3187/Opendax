@@ -11,9 +11,9 @@ services:
     command: /usr/local/bin/envoy --v2-config-only -l info -c /etc/envoy/envoy.yaml
     labels:
       traefik.enable: true
-      traefik.frontend.rule: "PathPrefix:/api/, /admin, /assets/;Host:ae6bea5a.ngrok.io"
+      traefik.frontend.rule: "PathPrefix:/api/, /admin, /assets/;Host:www.app.local"
       traefik.default.port: 8099
       traefik.default.protocol: http
-      traefik.wss.frontend.rule: "Host:ae6bea5a.ngrok.io"
+      traefik.wss.frontend.rule: "Host:www.app.local"
       traefik.wss.protocol: ws
       traefik.wss.port: 8099

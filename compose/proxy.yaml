@@ -13,13 +13,13 @@ services:
     networks:
       default:
         aliases:
-          - ae6bea5a.ngrok.io
-          - peatio.ngrok.io
-          - ws.ranger.ngrok.io
-          - eth.ngrok.io
-          - tower.ngrok.io
-          - monitor.ngrok.io
+          - www.app.local
+          - peatio.app.local
+          - ws.ranger.app.local
+          - eth.app.local
+          - tower.app.local
+          - monitor.app.local
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: monitor.ngrok.io'
+      traefik.frontend.rule: 'Host: monitor.app.local'
       traefik.port: 8080

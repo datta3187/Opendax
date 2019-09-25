@@ -15,5 +15,5 @@ services:
         yarn start
     labels:
       traefik.enable: true
-      traefik.frontend.rule: "PathPrefix:/;Host:ae6bea5a.ngrok.io"
+      traefik.frontend.rule: "PathPrefix:/;Host:www.app.local"
       traefik.port: 3000

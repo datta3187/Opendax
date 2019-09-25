@@ -3,12 +3,12 @@ version: '3.6'
 services:
   frontend:
     build:
-      context: "/home/user/rails_apps/peatio_xchange"
+      context: "/home/user/react_workspace/peatio_xchange"
     volumes:
       - ../config/frontend/env.js:/home/node/public/env.js
     labels:
       traefik.enable: true
-      traefik.frontend.rule: "PathPrefix:/;Host:ae6bea5a.ngrok.io"
+      traefik.frontend.rule: "PathPrefix:/;Host:www.app.local"
       traefik.port: 3000
 
   tower:
@@ -17,6 +17,6 @@ services:
       - ../config/frontend/tower.js:/home/app/env.js
     labels:
       traefik.enable: true
-      traefik.frontend.rule: "PathPrefix:/tower;Host:ae6bea5a.ngrok.io"
+      traefik.frontend.rule: "PathPrefix:/tower;Host:www.app.local"
       traefik.port: 8080
 

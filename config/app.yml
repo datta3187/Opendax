@@ -1,14 +1,14 @@
 app:
   name: "Microkube"
-  domain: "ngrok.io"
-  subdomain: "ae6bea5a"
+  domain: "app.local"
+  subdomain: "www"
 ssl:
   enabled: true
   email: "support@example.com"
 images:
-  peatio: /home/user/rails_apps/peatio
-  barong: /home/user/rails_apps/barong
-  frontend: /home/user/rails_apps/peatio_xchange
+  peatio: /home/user/react_workspace/peatio
+  barong: /home/user/react_workspace/barong
+  frontend: /home/user/react_workspace/peatio_xchange
   tower: rubykube/tower:0.1.8
   postmaster: quay.io/openware/postmaster:0.0.3
   arke: rubykube/arke:0.1.5
