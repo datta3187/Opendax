@@ -1,7 +1,7 @@
 app:
   name: "Microkube"
-  domain: "app.local"
-  subdomain: "www"
+  domain: "tradence.io"
+  subdomain: "stage"
 ssl:
   enabled: true
   email: "support@example.com"
@@ -43,7 +43,7 @@ arke:
     pair: 'ETHUSD'
     target:
       driver: rubykube
-      host: 'http://www.app.local'
+      host: 'http://stage.tradence.io'
       name: John
       key: changeme
       secret: changeme
