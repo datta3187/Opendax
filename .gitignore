@@ -16,3 +16,10 @@ vendor/
 terraform.tfstate*
 !data/geth/.gitkeep
 .idea/
+
+node_modules/
+package-lock.json
+compose/*
+
+
+
