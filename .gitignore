@@ -16,3 +16,14 @@ vendor/
 terraform.tfstate*
 !data/geth/.gitkeep
 .idea/
+
+
+
+config/app.yml
+templates/config/peatio.env.erb
+templates/config/barong.env.erb
+templates/config/postmaster.env.erb
+templates/config/ranger.env.erb
+lib/tasks/service.rake
+
+
