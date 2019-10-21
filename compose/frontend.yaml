@@ -1,0 +1,22 @@
+version: '3.6'
+
+services:
+  frontend:
+    build:
+      context: "/home/ec2-user/workspace/peatio_xchange"
+    volumes:
+      - ../config/frontend/env.js:/home/node/public/env.js
+    labels:
+      traefik.enable: true
+      traefik.frontend.rule: "PathPrefix:/;Host:stage.tradence.io"
+      traefik.port: 3000
+
+  tower:
+    image: "rubykube/tower:0.1.8"
+    volumes:
+      - ../config/frontend/tower.js:/home/app/env.js
+    labels:
+      traefik.enable: true
+      traefik.frontend.rule: "PathPrefix:/tower;Host:stage.tradence.io"
+      traefik.port: 8080
+

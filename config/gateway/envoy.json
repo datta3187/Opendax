@@ -213,7 +213,7 @@
                                                             "case_sensitive": true,
                                                             "headers": [
                                                                 {
-                                                                    "exact_match": "www.app.local",
+                                                                    "exact_match": "stage.tradence.io",
                                                                     "name": ":authority"
                                                                 }
                                                             ],
@@ -251,7 +251,7 @@
                                                             "case_sensitive": true,
                                                             "headers": [
                                                                 {
-                                                                    "exact_match": "www.app.local",
+                                                                    "exact_match": "stage.tradence.io",
                                                                     "name": ":authority"
                                                                 }
                                                             ],
@@ -289,7 +289,7 @@
                                                             "case_sensitive": true,
                                                             "headers": [
                                                                 {
-                                                                    "exact_match": "www.app.local",
+                                                                    "exact_match": "stage.tradence.io",
                                                                     "name": ":authority"
                                                                 }
                                                             ],
@@ -322,7 +322,7 @@
                                                             "case_sensitive": true,
                                                             "headers": [
                                                                 {
-                                                                    "exact_match": "www.app.local",
+                                                                    "exact_match": "stage.tradence.io",
                                                                     "name": ":authority"
                                                                 }
                                                             ],
@@ -355,7 +355,7 @@
                                                             "case_sensitive": true,
                                                             "headers": [
                                                                 {
-                                                                    "exact_match": "www.app.local",
+                                                                    "exact_match": "stage.tradence.io",
                                                                     "name": ":authority"
                                                                 }
                                                             ],
@@ -388,7 +388,7 @@
                                                             "case_sensitive": true,
                                                             "headers": [
                                                                 {
-                                                                    "exact_match": "www.app.local",
+                                                                    "exact_match": "stage.tradence.io",
                                                                     "name": ":authority"
                                                                 }
                                                             ],
