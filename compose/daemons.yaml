@@ -2,7 +2,7 @@ version: '3.6'
 
 x-daemon: &peatio-daemon
   build:
-    context: "/home/user/react_workspace/peatio"
+    context: "/home/ec2-user/workspace/peatio"
   restart: always
   env_file:
     - ../config/peatio.env
@@ -72,7 +72,7 @@ services:
 
   ranger:
     build:
-      context: "/home/user/react_workspace/peatio"
+      context: "/home/ec2-user/workspace/peatio"
     env_file:
       - ../config/ranger.env
     ports:
