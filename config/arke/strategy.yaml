@@ -4,7 +4,7 @@ strategy:
   pair: ETHUSD
   target:
     driver: rubykube
-    host: http://stage.tradence.io
+    host: http://www.app.local
     name: John
     key: changeme
     secret: changeme
