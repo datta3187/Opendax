@@ -13,13 +13,13 @@ services:
     networks:
       default:
         aliases:
-          - www.app.local
-          - peatio.app.local
-          - ws.ranger.app.local
-          - eth.app.local
-          - tower.app.local
-          - monitor.app.local
+          - stage.tradence.io
+          - peatio.tradence.io
+          - ws.ranger.tradence.io
+#          - eth.
+          - tower.tradence.io
+          - monitor.tradence.io
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: monitor.app.local'
+      traefik.frontend.rule: 'Host: monitor.tradence.io'
       traefik.port: 8080

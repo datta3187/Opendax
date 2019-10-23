@@ -17,11 +17,14 @@ images:
   arke: rubykube/arke:0.1.5
 vendor:
   frontend: https://github.com/rubykube/mikroapp.git
+
 storage:
-  provider: "local"
-  bucketName: "microkube-barong-docs-bucket"
-  accessKey: "**********"
-  secretKey: "**********"
+  provider: "AWS"
+  bucketName: "stage-tradence"
+  accessKey: "AKIARAZPYJBCWRGYEJMG"
+  secretKey: "Y4LfhwFk/caGLda4PYwmtPasNb5I3CTc0CxtOLIg"
+  region: "ap-southeast-1"
+
 terraform:
   credentials: "~/safe/microkube.json"
   project: "example-microkube"
