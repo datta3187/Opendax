@@ -1,30 +1,30 @@
 version: '3.6'
 
 services:
-#  db:
-#    image: mysql:5.7
-#    volumes:
-#      - db_data:/var/lib/mysql
-#    ports:
-#      - "3306:3306"
-#    environment:
-#      MYSQL_ROOT_PASSWORD: changeme
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: changeme
 
-#  redis:
-#    image: redis:4.0.10
-#    restart: always
-#    volumes:
-#      - redis_data:/data
+  redis:
+    image: redis:4.0.10
+    restart: always
+    volumes:
+      - redis_data:/data
 
-#  rabbitmq:
-#    image: rabbitmq:3.7.6-management
-#    restart: always
-#    volumes:
-#      - rabbitmq_data:/var/lib/rabbitmq
-#    labels:
-#      traefik.enable: true
-#      traefik.frontend.rule: 'Host: rabbitmq.<%##= @config['app']['domain'] %>'
-#      traefik.port: 15672
+  rabbitmq:
+    image: rabbitmq:3.7.6-management
+    restart: always
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    labels:
+      traefik.enable: true
+      traefik.frontend.rule: 'Host: rabbitmq.<%= @config['app']['domain'] %>'
+      traefik.port: 15672
 
   vault:
     image: vault:0.10.2

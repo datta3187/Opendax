@@ -27,7 +27,10 @@ compose/*
 #templates/config/barong.env.erb
 #templates/config/postmaster.env.erb
 #templates/config/ranger.env.erb
+#templates/compose/backend.yaml.erb
+
 #lib/tasks/service.rake
+
 
 # config/app.yml templates/config/peatio.env.erb templates/config/barong.env.erb templates/config/postmaster.env.erb templates/config/ranger.env.erb lib/tasks/service.rake
 
