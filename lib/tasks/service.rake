@@ -137,7 +137,7 @@ namespace :service do
 
     def stop
       puts '----- Stopping app -----'
-      sh 'docker-compose rm -fs peatio barong gateway'
+      sh 'docker-compose rm -fs peatio barong gateway '
     end
 
     @switch.call(args, method(:start), method(:stop))

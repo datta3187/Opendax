@@ -3,7 +3,7 @@ version: '3.6'
 services:
   peatio:
     build:
-      context: /home/user/react_workspace/peatio
+      context: "<%= @config['images']['peatio'] %>"
     env_file:
       - ../config/peatio.env
     expose:
@@ -17,7 +17,7 @@ services:
 
   barong:
     build:
-      context: /home/user/react_workspace/barong
+      context: "<%= @config['images']['barong'] %>"
     env_file:
       - ../config/barong.env
     ports:

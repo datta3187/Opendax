@@ -16,7 +16,7 @@ services:
           - www.app.local
           - peatio.app.local
           - ws.ranger.app.local
-          - eth.app.local
+#          - eth.
           - tower.app.local
           - monitor.app.local
     labels:

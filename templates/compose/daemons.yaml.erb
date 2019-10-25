@@ -2,7 +2,7 @@ version: '3.6'
 
 x-daemon: &peatio-daemon
   build:
-    context: /home/user/react_workspace/peatio
+    context: "<%= @config['images']['peatio'] %>"
   restart: always
   env_file:
     - ../config/peatio.env
@@ -12,15 +12,23 @@ x-daemon: &peatio-daemon
 services:
   withdraw_audit:
     << : *peatio-daemon
-    command: bash -c "bin/link_config && bundle exec ruby lib/daemons/withdraw_audit.rb"
+    command: bash -c "bin/link_config && bundle exec ruby lib/daemons/daemons.rb withdraw_audit"
 
   blockchain:
     << : *peatio-daemon
-    command: bash -c "bin/link_config && bundle exec ruby lib/daemons/blockchain.rb"
+    command: bash -c "bin/link_config && bundle exec ruby lib/daemons/daemons.rb blockchain"
 
   global_state:
     << : *peatio-daemon
-    command: bash -c "bin/link_config && bundle exec ruby lib/daemons/global_state.rb"
+    command: bash -c "bin/link_config && bundle exec ruby lib/daemons/daemons.rb global_state"
+
+  k:
+    << : *peatio-daemon
+    command: bash -c "bin/link_config && bundle exec ruby lib/daemons/daemons.rb k"
+
+  slave_book:
+    << : *peatio-daemon
+    command: bash -c "bin/link_config && bundle exec ruby lib/daemons/daemons.rb slave_book"
 
   deposit_collection:
     << : *peatio-daemon
@@ -33,10 +41,6 @@ services:
   deposit_coin_address:
     << : *peatio-daemon
     command: bash -c "bin/link_config && bundle exec ruby lib/daemons/amqp_daemon.rb deposit_coin_address"
-
-  slave_book:
-    << : *peatio-daemon
-    command: bash -c "bin/link_config && bundle exec ruby lib/daemons/amqp_daemon.rb slave_book"
 
   market_ticker:
     << : *peatio-daemon
@@ -66,13 +70,9 @@ services:
     << : *peatio-daemon
     command: bash -c "bin/link_config && bundle exec ruby lib/daemons/amqp_daemon.rb pusher_member"
 
-  k:
-    << : *peatio-daemon
-    command: bash -c "bin/link_config && bundle exec ruby lib/daemons/k.rb"
-
   ranger:
     build:
-      context: /home/user/react_workspace/peatio
+      context: "<%= @config['images']['peatio'] %>"
     env_file:
       - ../config/ranger.env
     ports:
