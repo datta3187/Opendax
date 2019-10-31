@@ -3,7 +3,7 @@ version: '3.6'
 services:
   frontend:
     build:
-      context: "/home/user/react_workspace/peatio_xchange"
+      context: "/home/user/prod_react_workspace/peatio_xchange"
     volumes:
       - ../config/frontend/env.js:/home/node/public/env.js
     labels:

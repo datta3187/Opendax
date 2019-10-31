@@ -202,7 +202,7 @@
                                            <li>*DO NOT call any Phone number for someone claiming to be tradence support! </li>
                                            <li>*Do NOT send any money to anyone claiming to be a member of Exto!</li>
                                            <li>Enable Google Two Factor Authentication!</li>
-                                           <li>Make sure you are visiting https://stage-tradence.com</li>
+                                           <li>Make sure you are visiting https://tradence.com</li>
                                         </ul>
                                     </td>
                                     </tr>

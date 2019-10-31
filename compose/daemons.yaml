@@ -2,7 +2,7 @@ version: '3.6'
 
 x-daemon: &peatio-daemon
   build:
-    context: "/home/user/react_workspace/peatio"
+    context: "/home/user/prod_react_workspace/peatio"
   restart: always
   env_file:
     - ../config/peatio.env
@@ -72,7 +72,7 @@ services:
 
   ranger:
     build:
-      context: "/home/user/react_workspace/peatio"
+      context: "/home/user/prod_react_workspace/peatio"
     env_file:
       - ../config/ranger.env
     ports:
@@ -80,7 +80,10 @@ services:
     command: bash -c "bundle exec peatio service start ranger"
 
   postmaster:
-    image: "quay.io/openware/postmaster:0.0.3"
+    image: "quay.io/openware/postmaster:2.3.4"
     env_file:
       - ../config/postmaster.env
+    volumes:
+      - ../config/postmaster.yml:/app/config/postmaster.yml
+      - ../config/postmaster/templates/en/:/app/templates/en/
 

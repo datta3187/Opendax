@@ -83,4 +83,7 @@ services:
     image: "<%= @config['images']['postmaster'] %>"
     env_file:
       - ../config/postmaster.env
+    volumes:
+      - ../config/postmaster.yml:/app/config/postmaster.yml
+      - ../config/postmaster/templates/en/:/app/templates/en/
 
