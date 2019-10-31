@@ -6,9 +6,9 @@ ssl:
   enabled: true
   email: "support@example.com"
 images:
-  peatio: /home/user/prod_react_workspace/peatio
-  barong: /home/user/prod_react_workspace/barong
-  frontend: /home/user/prod_react_workspace/peatio_xchange
+  peatio: /home/ec2-user/prod_react_workspace/peatio
+  barong: /home/ec2-user/prod_react_workspace/barong
+  frontend: /home/ec2-user/prod_react_workspace/peatio_xchange
   tower: rubykube/tower:0.1.8
   postmaster: quay.io/openware/postmaster:2.3.4
   arke: rubykube/arke:0.1.5
