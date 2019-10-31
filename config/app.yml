@@ -1,7 +1,7 @@
 app:
   name: "Microkube"
-  domain: "app.local"
-  subdomain: "www"
+  domain: "tradence.io"
+  subdomain: "promotion"
 ssl:
   enabled: true
   email: "support@example.com"
@@ -16,10 +16,10 @@ vendor:
   frontend: https://github.com/rubykube/mikroapp.git
 storage:
   provider: "AWS"
-  bucketName: "stage-tradence"
-  accessKey: "AKIARAZPYJBCWRGYEJMG"
-  secretKey: "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"
-  region: "ap-southeast-1"
+  bucketName: "prod-tradence"
+  accessKey: "AKIARAZPYJBC4FEJVODI"
+  secretKey: "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"
+  region: "ap-northeast-2"
 
 terraform:
   credentials: "~/safe/microkube.json"
@@ -49,7 +49,7 @@ arke:
     pair: 'ETHUSD'
     target:
       driver: rubykube
-      host: 'http://www.app.local'
+      host: 'http://promotion.tradence.io'
       name: John
       key: changeme
       secret: changeme
