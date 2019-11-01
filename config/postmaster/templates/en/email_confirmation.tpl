@@ -197,11 +197,6 @@
                                     <tr>
                                         <td>
                                         <ul style="padding:0; margin:0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700;">
-                                           <li style="color: #ff0017">5 Security Tips:</li>
-                                           <li>*Do NOT give your Password to anyone!</li>
-                                           <li>*DO NOT call any Phone number for someone claiming to be tradence support! </li>
-                                           <li>*Do NOT send any money to anyone claiming to be a member of Exto!</li>
-                                           <li>Enable Google Two Factor Authentication!</li>
                                            <li>Make sure you are visiting https://promotion.tradence.io</li>
                                         </ul>
                                     </td>
