@@ -34,12 +34,12 @@ twilio:
   account_sid: "AC9ce5211062b3742247c476e531816c41"
   auth_token: "9cd2e1ca945ce031f808065f73de9d15"
 smtp:
-  host: email-smtp.us-east-1.amazonaws.com
-  port: 587
-  user: AKIARAZPYJBC6V4UMBFL
-  password: IOXjO0HpPp+xAC8j4ruNyv1tDDQ1TDqkeQIohk/A
+  host: smtp.sendgrid.net
+  port: 2525
+  user: 'tradence-stage'
+  password: 'Test@260!123'
   sender_email: noreply@tradence.io
-  sender_name: Postmaster
+  sender_name: Tradence
 
 sendgrid_api_key: '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'
 
