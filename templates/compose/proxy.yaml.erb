@@ -23,3 +23,4 @@ services:
       traefik.enable: true
       traefik.frontend.rule: 'Host: monitor.<%= @config['app']['domain'] %>'
       traefik.port: 8080
+      traefik.frontend.redirect.entryPoint: https
