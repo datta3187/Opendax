@@ -39,7 +39,7 @@ namespace :service do
 
     def start
       puts '----- Starting dependencies -----'
-      sh 'docker-compose up -d vault'
+      sh 'docker-compose up -d vault db redis rabbitmq'
       sh 'docker-compose run --rm vault secrets enable totp \
               && docker-compose run --rm vault secrets disable secret \
               && docker-compose run --rm vault secrets enable -path=secret -version=1 kv \
@@ -49,7 +49,7 @@ namespace :service do
 
     def stop
       puts '----- Stopping dependencies -----'
-      sh 'docker-compose rm -fs vault'
+      sh 'docker-compose rm -fs vault db redis rabbitmq'
     end
 
 
@@ -99,12 +99,12 @@ namespace :service do
 
     def start
       puts '----- Starting cryptonodes -----'
-      # sh 'docker-compose up -d geth'
+      sh 'docker-compose up -d geth'
     end
 
     def stop
       puts '----- Stopping cryptonodes -----'
-      # sh 'docker-compose rm -fs geth'
+      sh 'docker-compose rm -fs geth'
     end
 
     @switch.call(args, method(:start), method(:stop))

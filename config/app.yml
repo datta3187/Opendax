@@ -4,7 +4,7 @@ app:
   subdomain: "promotion"
 ssl:
   enabled: true
-  email: "support@example.com"
+  email: "no-reply@tradence.io"
 images:
   peatio: /home/ec2-user/prod_react_workspace/peatio
   barong: /home/ec2-user/prod_react_workspace/barong
@@ -38,7 +38,7 @@ smtp:
   port: 2525
   user: 'tradence-stage'
   password: 'Test@260!123'
-  sender_email: noreply@tradence.io
+  sender_email: no-reply@tradence.io
   sender_name: Tradence
 
 sendgrid_api_key: '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'

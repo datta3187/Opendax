@@ -23,3 +23,5 @@ services:
       traefik.enable: true
       traefik.frontend.rule: 'Host: monitor.<%= @config['app']['domain'] %>'
       traefik.port: 8080
+      traefik.frontend.headers.SSLProxyHeaders: "X-Forwarded-Proto: https"
+      traefik.frontend.headers.SSLRedirect: true
