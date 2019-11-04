@@ -13,8 +13,8 @@ services:
       traefik.enable: true
       traefik.frontend.rule: "PathPrefix:/api/, /admin, /assets/;Host:<%= @config['app']['subdomain'] %>.<%= @config['app']['domain'] %>"
       traefik.default.port: 8099
-      traefik.default.protocol: http
+      traefik.default.protocol: https
       traefik.wss.frontend.rule: "Host:<%= @config['app']['subdomain'] %>.<%= @config['app']['domain'] %>"
-      traefik.wss.protocol: ws
+      traefik.wss.protocol: wss
       traefik.wss.port: 8099
 
