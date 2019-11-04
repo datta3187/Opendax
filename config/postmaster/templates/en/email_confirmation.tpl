@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Tradence</title>
-<style>
+<style type="text/css">
     
     #outlook a {
         padding: 0;
@@ -191,7 +191,7 @@
                                     </tr>
                                     <tr>
                                         <td style="text-align: left; padding: 15px 0px 0 0;">
-                                            <a href="{{ .record.domain }}/email-confirm/{{ .record.token }}" class="btn Authorize-btn" style="padding:10px 28px;background:#00adee;color:#fff;text-decoration:none">VERIFY EMAIL</a>
+                                            <a href="https://{{ .record.domain }}/email-confirm/{{ .record.token }}" class="btn Authorize-btn" style="padding:10px 28px;background:#00adee;color:#fff;text-decoration:none">VERIFY EMAIL</a>
                                         </td>
                                     </tr>
                                     <tr>

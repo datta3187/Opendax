@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Tradence</title>
-<style>
+<style type="text/css">
     
     #outlook a {
         padding: 0;
@@ -189,7 +189,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: left; padding: 15px 0px 0 0;"><a href="{{ .record.domain }}/password-reset/{{ .record.token }}" class="btn Authorize-btn" style="display:inline-block; margin-bottom: 10px; background-color: #00adee; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px; display: inline-block; text-decoration: none;">Reset Password</a></td>
+                                        <td style="text-align: left; padding: 15px 0px 0 0;"><a href="https://{{ .record.domain }}/password-reset/{{ .record.token }}" class="btn Authorize-btn" style="display:inline-block; margin-bottom: 10px; background-color: #00adee; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px; display: inline-block; text-decoration: none;">Reset Password</a></td>
                                     </tr>
                                     <tr style="background-color:#fff; border: 1px solid #e2e2e2;">
                                         <td colspan="2" style="padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; line-height:25px; line-height: 20px;">
